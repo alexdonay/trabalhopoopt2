@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace trabalhopoopt2
 {
-    public partial class Form1 : Form
+    public partial class FrmInicial : Form
     {
-        public Form1()
+        public FrmInicial()
         {
             InitializeComponent();
+        }
+
+        private void BtnCadastrarCliente_Click(object sender, EventArgs e)
+        {
+            Form frm = new FrmCadastroCliente();
+            frm.Show();
         }
     }
 }

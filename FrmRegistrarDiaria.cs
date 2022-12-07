@@ -33,8 +33,7 @@ namespace trabalhopoopt2
 
         private void BtnRegistraDiaria_Click(object sender, EventArgs e)
         {
-            dados.Clientes.Where(cl => cl.placaVeiculo == CbCliente.Text).Select(sr => sr.saldo++);
-            dados.Clientes.FirstOrDefault(n => n.placaVeiculo == CbCliente.Text).saldo = 12;
+            dados.updateClienteSaldo(CbCliente.Text);
             var d = dados.Clientes.FirstOrDefault(n => n.placaVeiculo == CbCliente.Text).saldo;
             MessageBox.Show(d.ToString());
 

@@ -31,7 +31,7 @@ namespace trabalhopoopt2
         }
         public override void estacionar(double quantidadeDiaria)
         {
-            this.saldo = (quantidadeDiaria * this.valorHoras) + this.valorHoras;
+            this.saldo = (quantidadeDiaria * this.valorHoras) + this.saldo;
         }
     }
     

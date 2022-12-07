@@ -8,11 +8,14 @@ namespace trabalhopoopt2
 {
     internal class Cliente : Usuario
     {
-        private double saldo { get; set; }
+
+        public double saldo { get; set; }
+        public string placaVeiculo { get; set; }
         private double valorHoras {get;set;}
-        public Cliente(string nome, string cpf) : base(nome, cpf)
+        public Cliente(string placaVeiculo, string nome, string cpf) : base(nome, cpf)
         {
             this.valorHoras = 5;
+            this.placaVeiculo = placaVeiculo;
         }
             
         public override void pagarDiaria(double valorPago)

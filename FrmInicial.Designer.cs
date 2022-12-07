@@ -41,6 +41,7 @@
             this.BtnRegistrarDiaria.TabIndex = 0;
             this.BtnRegistrarDiaria.Text = "Registrar Diária";
             this.BtnRegistrarDiaria.UseVisualStyleBackColor = true;
+            this.BtnRegistrarDiaria.Click += new System.EventHandler(this.BtnRegistrarDiaria_Click);
             // 
             // BtnCadastrarCliente
             // 
@@ -61,7 +62,7 @@
             this.BtnReceber.Text = "Receber";
             this.BtnReceber.UseVisualStyleBackColor = true;
             // 
-            // FrnInicial
+            // FrmInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -69,7 +70,7 @@
             this.Controls.Add(this.BtnReceber);
             this.Controls.Add(this.BtnCadastrarCliente);
             this.Controls.Add(this.BtnRegistrarDiaria);
-            this.Name = "FrnInicial";
+            this.Name = "FrmInicial";
             this.Text = "Controle de Estacionamento";
             this.ResumeLayout(false);
 

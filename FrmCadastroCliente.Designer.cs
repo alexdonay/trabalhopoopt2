@@ -33,11 +33,13 @@
             this.LblCPF = new System.Windows.Forms.Label();
             this.LblNome = new System.Windows.Forms.Label();
             this.Cadastrar = new System.Windows.Forms.Button();
+            this.LblPlacaVeiculo = new System.Windows.Forms.Label();
+            this.TxPlacaVeiculo = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // TxCPF
             // 
-            this.TxCPF.Location = new System.Drawing.Point(30, 75);
+            this.TxCPF.Location = new System.Drawing.Point(30, 107);
             this.TxCPF.Name = "TxCPF";
             this.TxCPF.Size = new System.Drawing.Size(100, 20);
             this.TxCPF.TabIndex = 0;
@@ -52,7 +54,7 @@
             // LblCPF
             // 
             this.LblCPF.AutoSize = true;
-            this.LblCPF.Location = new System.Drawing.Point(27, 49);
+            this.LblCPF.Location = new System.Drawing.Point(27, 81);
             this.LblCPF.Name = "LblCPF";
             this.LblCPF.Size = new System.Drawing.Size(30, 13);
             this.LblCPF.TabIndex = 2;
@@ -61,7 +63,7 @@
             // LblNome
             // 
             this.LblNome.AutoSize = true;
-            this.LblNome.Location = new System.Drawing.Point(27, 120);
+            this.LblNome.Location = new System.Drawing.Point(27, 130);
             this.LblNome.Name = "LblNome";
             this.LblNome.Size = new System.Drawing.Size(38, 13);
             this.LblNome.TabIndex = 3;
@@ -73,14 +75,33 @@
             this.Cadastrar.Name = "Cadastrar";
             this.Cadastrar.Size = new System.Drawing.Size(100, 23);
             this.Cadastrar.TabIndex = 4;
-            this.Cadastrar.Text = "BtnCadastrar";
+            this.Cadastrar.Text = "Cadastrar";
             this.Cadastrar.UseVisualStyleBackColor = true;
+            this.Cadastrar.Click += new System.EventHandler(this.Cadastrar_Click);
+            // 
+            // LblPlacaVeiculo
+            // 
+            this.LblPlacaVeiculo.AutoSize = true;
+            this.LblPlacaVeiculo.Location = new System.Drawing.Point(27, 42);
+            this.LblPlacaVeiculo.Name = "LblPlacaVeiculo";
+            this.LblPlacaVeiculo.Size = new System.Drawing.Size(72, 13);
+            this.LblPlacaVeiculo.TabIndex = 6;
+            this.LblPlacaVeiculo.Text = "Placa Veiculo";
+            // 
+            // TxPlacaVeiculo
+            // 
+            this.TxPlacaVeiculo.Location = new System.Drawing.Point(30, 58);
+            this.TxPlacaVeiculo.Name = "TxPlacaVeiculo";
+            this.TxPlacaVeiculo.Size = new System.Drawing.Size(100, 20);
+            this.TxPlacaVeiculo.TabIndex = 5;
             // 
             // FrmCadastroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(156, 259);
+            this.Controls.Add(this.LblPlacaVeiculo);
+            this.Controls.Add(this.TxPlacaVeiculo);
             this.Controls.Add(this.Cadastrar);
             this.Controls.Add(this.LblNome);
             this.Controls.Add(this.LblCPF);
@@ -101,6 +122,8 @@
         private System.Windows.Forms.Label LblCPF;
         private System.Windows.Forms.Label LblNome;
         private System.Windows.Forms.Button Cadastrar;
+        private System.Windows.Forms.Label LblPlacaVeiculo;
+        private System.Windows.Forms.TextBox TxPlacaVeiculo;
     }
 }
 

@@ -12,6 +12,14 @@ namespace trabalhopoopt2
         {
             this.Clientes.FirstOrDefault(n => n.placaVeiculo == placa).estacionar(1);
         }
+        public void receber(string placa, double valor)
+        {
+            this.Clientes.FirstOrDefault(n => n.placaVeiculo == placa).pagarDiaria(valor);
+        }
+        public double retornaSaldo(string placa)
+        {
+            return this.Clientes.FirstOrDefault(n => n.placaVeiculo == placa).saldo;
+        }
         public static BancoDados getInstance()
         {
             if (_instance == null)

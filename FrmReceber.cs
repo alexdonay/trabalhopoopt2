@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,14 +20,27 @@ namespace trabalhopoopt2
             InitializeComponent();
             foreach (Cliente cliente in dados.Clientes)
             {
-               comboPlaca.Items.Add(cliente.placaVeiculo);
+               CbPlaca.Items.Add(cliente.placaVeiculo);
             }
 
         }
 
         private void comboPlaca_SelectedIndexChanged(object sender, EventArgs e)
         {
-            textPagar.Text = dados.Clientes.Where(x => x.placaVeiculo == comboPlaca.Text).Select(y => y.saldo.ToString("C")).FirstOrDefault();
+            TxSaldo.Text = dados.Clientes.Where(x => x.placaVeiculo == CbPlaca.Text).Select(y => y.saldo.ToString("C")).FirstOrDefault();
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            if(CbPlaca.Text != "" || TxSaldo.Text != "" || TxValorPago.Text != "")
+            {
+                dados.receber(CbPlaca.Text, double.Parse(TxValorPago.Text));
+                string saldo = dados.retornaSaldo(CbPlaca.Text).ToString();
+                MessageBox.Show($"valor recebido e o saldo atual é: {saldo}");
+                CbPlaca.Text = "";
+                TxSaldo.Text = "";
+                TxValorPago.Text = "";
+            }
         }
     }
 }

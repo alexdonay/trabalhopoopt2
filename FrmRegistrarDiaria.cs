@@ -35,7 +35,7 @@ namespace trabalhopoopt2
         {
             dados.updateClienteSaldo(CbCliente.Text);
             var d = dados.Clientes.FirstOrDefault(n => n.placaVeiculo == CbCliente.Text).saldo;
-            MessageBox.Show(d.ToString());
+            MessageBox.Show($"Registrada uma diária de R$ 5,00 e o saldo atual é de: {d.ToString("C")}");
 
 
          }

@@ -28,5 +28,12 @@ namespace trabalhopoopt2
             Form frmrg= new FrmRegistrarDiaria();
             frmrg.Show();
         }
+
+        private void BtnReceber_Click(object sender, EventArgs e)
+        {
+
+            Form frmrg = new FrmReceber();
+            frmrg.Show();
+        }
     }
 }

@@ -60,6 +60,12 @@
     <Compile Include="FrmInicial.Designer.cs">
       <DependentUpon>FrmInicial.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmReceber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReceber.Designer.cs">
+      <DependentUpon>FrmReceber.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmRegistrarDiaria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInicial.resx">
       <DependentUpon>FrmInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReceber.resx">
+      <DependentUpon>FrmReceber.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistrarDiaria.resx">
       <DependentUpon>FrmRegistrarDiaria.cs</DependentUpon>

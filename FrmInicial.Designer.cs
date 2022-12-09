@@ -61,6 +61,7 @@
             this.BtnReceber.TabIndex = 2;
             this.BtnReceber.Text = "Receber";
             this.BtnReceber.UseVisualStyleBackColor = true;
+            this.BtnReceber.Click += new System.EventHandler(this.BtnReceber_Click);
             // 
             // FrmInicial
             // 

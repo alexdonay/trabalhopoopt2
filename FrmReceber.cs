@@ -24,14 +24,9 @@ namespace trabalhopoopt2
 
         }
 
-        private void textPagar_TextChanged(object sender, EventArgs e)
-        {
-            textPagar.Text = dados.Clientes.Where(x => x.placaVeiculo == comboPlaca.Text).Select(y => y.saldo.ToString()).FirstOrDefault();
-        }
-
         private void comboPlaca_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            textPagar.Text = dados.Clientes.Where(x => x.placaVeiculo == comboPlaca.Text).Select(y => y.saldo.ToString("C")).FirstOrDefault();
         }
     }
 }

@@ -48,14 +48,14 @@
             this.CbCliente.Location = new System.Drawing.Point(90, 73);
             this.CbCliente.Name = "CbCliente";
             this.CbCliente.Size = new System.Drawing.Size(121, 21);
-            this.CbCliente.TabIndex = 2;
+            this.CbCliente.TabIndex = 1;
             // 
             // BtnRegistraDiaria
             // 
             this.BtnRegistraDiaria.Location = new System.Drawing.Point(90, 117);
             this.BtnRegistraDiaria.Name = "BtnRegistraDiaria";
             this.BtnRegistraDiaria.Size = new System.Drawing.Size(121, 23);
-            this.BtnRegistraDiaria.TabIndex = 3;
+            this.BtnRegistraDiaria.TabIndex = 2;
             this.BtnRegistraDiaria.Text = "Registra Diária";
             this.BtnRegistraDiaria.UseVisualStyleBackColor = true;
             this.BtnRegistraDiaria.Click += new System.EventHandler(this.BtnRegistraDiaria_Click);

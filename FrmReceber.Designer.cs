@@ -54,7 +54,7 @@ namespace trabalhopoopt2
             this.CbPlaca.Location = new System.Drawing.Point(48, 77);
             this.CbPlaca.Name = "CbPlaca";
             this.CbPlaca.Size = new System.Drawing.Size(75, 21);
-            this.CbPlaca.TabIndex = 2;
+            this.CbPlaca.TabIndex = 1;
             this.CbPlaca.SelectedIndexChanged += new System.EventHandler(this.comboPlaca_SelectedIndexChanged);
             // 
             // LblSaldoPagar
@@ -71,7 +71,7 @@ namespace trabalhopoopt2
             this.TxSaldo.Location = new System.Drawing.Point(48, 154);
             this.TxSaldo.Name = "TxSaldo";
             this.TxSaldo.Size = new System.Drawing.Size(75, 20);
-            this.TxSaldo.TabIndex = 4;
+            this.TxSaldo.TabIndex = 2;
             // 
             // LblValorPago
             // 
@@ -87,14 +87,14 @@ namespace trabalhopoopt2
             this.TxValorPago.Location = new System.Drawing.Point(48, 235);
             this.TxValorPago.Name = "TxValorPago";
             this.TxValorPago.Size = new System.Drawing.Size(75, 20);
-            this.TxValorPago.TabIndex = 6;
+            this.TxValorPago.TabIndex = 3;
             // 
             // btnSalvar
             // 
             this.btnSalvar.Location = new System.Drawing.Point(48, 286);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
-            this.btnSalvar.TabIndex = 7;
+            this.btnSalvar.TabIndex = 4;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);

@@ -42,14 +42,14 @@
             this.TxCPF.Location = new System.Drawing.Point(30, 107);
             this.TxCPF.Name = "TxCPF";
             this.TxCPF.Size = new System.Drawing.Size(100, 20);
-            this.TxCPF.TabIndex = 0;
+            this.TxCPF.TabIndex = 2;
             // 
             // TxNome
             // 
             this.TxNome.Location = new System.Drawing.Point(30, 146);
             this.TxNome.Name = "TxNome";
             this.TxNome.Size = new System.Drawing.Size(100, 20);
-            this.TxNome.TabIndex = 1;
+            this.TxNome.TabIndex = 3;
             // 
             // LblCPF
             // 
@@ -93,7 +93,7 @@
             this.TxPlacaVeiculo.Location = new System.Drawing.Point(30, 58);
             this.TxPlacaVeiculo.Name = "TxPlacaVeiculo";
             this.TxPlacaVeiculo.Size = new System.Drawing.Size(100, 20);
-            this.TxPlacaVeiculo.TabIndex = 5;
+            this.TxPlacaVeiculo.TabIndex = 1;
             // 
             // FrmCadastroCliente
             // 

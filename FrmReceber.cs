@@ -18,7 +18,7 @@ namespace trabalhopoopt2
         public FrmReceber()
         {
             InitializeComponent();
-            foreach (Cliente cliente in dados.Clientes)
+            foreach (Cliente cliente in dados.clientes)
             {
                CbPlaca.Items.Add(cliente.placaVeiculo);
             }
@@ -27,7 +27,7 @@ namespace trabalhopoopt2
 
         private void comboPlaca_SelectedIndexChanged(object sender, EventArgs e)
         {
-            TxSaldo.Text = dados.Clientes.Where(x => x.placaVeiculo == CbPlaca.Text).Select(y => y.saldo.ToString("C")).FirstOrDefault();
+            TxSaldo.Text = dados.clientes.Where(x => x.placaVeiculo == CbPlaca.Text).Select(y => y.saldo.ToString("C")).FirstOrDefault();
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -41,6 +41,11 @@ namespace trabalhopoopt2
                 TxSaldo.Text = "";
                 TxValorPago.Text = "";
             }
+        }
+
+        private void FrmReceber_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

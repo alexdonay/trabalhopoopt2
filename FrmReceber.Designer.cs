@@ -113,6 +113,7 @@ namespace trabalhopoopt2
             this.Controls.Add(this.LblPlacaVeiculo);
             this.Name = "FrmReceber";
             this.Text = "Recebimento";
+            this.Load += new System.EventHandler(this.FrmReceber_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

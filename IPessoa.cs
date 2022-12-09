@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace trabalhopoopt2
 {
-    internal interface IPessoa
+    interface IPessoa
     {
         string cpf { get; set; }
         string nome { get; set; }

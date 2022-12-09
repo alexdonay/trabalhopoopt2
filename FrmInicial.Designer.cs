@@ -31,6 +31,8 @@
             this.BtnRegistrarDiaria = new System.Windows.Forms.Button();
             this.BtnCadastrarCliente = new System.Windows.Forms.Button();
             this.BtnReceber = new System.Windows.Forms.Button();
+            this.BtnCadastrarUsuario = new System.Windows.Forms.Button();
+            this.BtnTrocarUsuario = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnRegistrarDiaria
@@ -63,16 +65,39 @@
             this.BtnReceber.UseVisualStyleBackColor = true;
             this.BtnReceber.Click += new System.EventHandler(this.BtnReceber_Click);
             // 
+            // BtnCadastrarUsuario
+            // 
+            this.BtnCadastrarUsuario.Location = new System.Drawing.Point(21, 12);
+            this.BtnCadastrarUsuario.Name = "BtnCadastrarUsuario";
+            this.BtnCadastrarUsuario.Size = new System.Drawing.Size(166, 23);
+            this.BtnCadastrarUsuario.TabIndex = 3;
+            this.BtnCadastrarUsuario.Text = "Cadastrar Usuário";
+            this.BtnCadastrarUsuario.UseVisualStyleBackColor = true;
+            this.BtnCadastrarUsuario.Click += new System.EventHandler(this.BtnCadastrarUsuario_Click);
+            // 
+            // BtnTrocarUsuario
+            // 
+            this.BtnTrocarUsuario.Location = new System.Drawing.Point(365, 12);
+            this.BtnTrocarUsuario.Name = "BtnTrocarUsuario";
+            this.BtnTrocarUsuario.Size = new System.Drawing.Size(166, 23);
+            this.BtnTrocarUsuario.TabIndex = 4;
+            this.BtnTrocarUsuario.Text = "Trocar de Usuário";
+            this.BtnTrocarUsuario.UseVisualStyleBackColor = true;
+            this.BtnTrocarUsuario.Click += new System.EventHandler(this.BtnTrocarUsuario_Click);
+            // 
             // FrmInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(558, 128);
+            this.ClientSize = new System.Drawing.Size(558, 93);
+            this.Controls.Add(this.BtnTrocarUsuario);
+            this.Controls.Add(this.BtnCadastrarUsuario);
             this.Controls.Add(this.BtnReceber);
             this.Controls.Add(this.BtnCadastrarCliente);
             this.Controls.Add(this.BtnRegistrarDiaria);
             this.Name = "FrmInicial";
             this.Text = "Controle de Estacionamento";
+            this.Load += new System.EventHandler(this.FrmInicial_Load);
             this.ResumeLayout(false);
 
         }
@@ -82,5 +107,7 @@
         private System.Windows.Forms.Button BtnRegistrarDiaria;
         private System.Windows.Forms.Button BtnCadastrarCliente;
         private System.Windows.Forms.Button BtnReceber;
+        private System.Windows.Forms.Button BtnCadastrarUsuario;
+        private System.Windows.Forms.Button BtnTrocarUsuario;
     }
 }

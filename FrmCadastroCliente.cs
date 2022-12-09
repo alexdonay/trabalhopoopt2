@@ -33,7 +33,7 @@ namespace trabalhopoopt2
                 else
                 {
                     Cliente cliente = new Cliente(TxPlacaVeiculo.Text, TxNome.Text, TxCPF.Text);
-                    dados.Clientes.Add(cliente);
+                    dados.clientes.Add(cliente);
                     MessageBox.Show("Cliente Cadastrado Com Sucesso");
                     TxPlacaVeiculo.Text = "";
                     TxCPF.Text = "";

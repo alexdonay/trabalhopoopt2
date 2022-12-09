@@ -18,9 +18,17 @@
   <Class Name="trabalhopoopt2.BancoDados">
     <Position X="7.25" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>BAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQAAABAAAAAAAA=</HashCode>
+      <HashCode>BAAEAAAAAAAABAAEAAAAAAAAAAAAAAQAAEAAAAAAQAA=</HashCode>
       <FileName>BancoDados.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="trabalhopoopt2.Funcionario">
+    <Position X="2.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAIAAAgAAEAA=</HashCode>
+      <FileName>Funcionario.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.169" Collapsed="true" />
   </Class>
   <Interface Name="trabalhopoopt2.IPessoa">
     <Position X="2.75" Y="0.75" Width="1.5" />

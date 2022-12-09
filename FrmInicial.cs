@@ -12,8 +12,13 @@ namespace trabalhopoopt2
 {
     public partial class FrmInicial : Form
     {
+        BancoDados dados = BancoDados.getInstance();
         public FrmInicial()
         {
+            if(dados.funcionarios.Count== 0)
+            {
+                MessageBox.Show("Cadastro de funcionários vazio iniciando com o usuário gerente");
+            }
             InitializeComponent();
         }
 
@@ -33,6 +38,23 @@ namespace trabalhopoopt2
         {
 
             Form frmrg = new FrmReceber();
+            frmrg.Show();
+        }
+
+        private void FrmInicial_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnTrocarUsuario_Click(object sender, EventArgs e)
+        {
+            Form frmrg = new FrmLogin();
+            frmrg.Show();
+        }
+
+        private void BtnCadastrarUsuario_Click(object sender, EventArgs e)
+        {
+            Form frmrg = new FrmFuncionario();
             frmrg.Show();
         }
     }

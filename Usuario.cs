@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace trabalhopoopt2
 {
-    internal abstract class Usuario : IPessoa
+    abstract class Usuario : IPessoa
     {
         public string cpf { get; set; }
         public string nome { get; set; }
